@@ -1,0 +1,4 @@
+AL = 5, AH = 254, BL = 0, BH = 192, CL = 0, CH = 16, DL = 0, DH = 16
+CF = 1 , PF = 0 , ZF = 0 , SF = 1 , OF = 0
+AL = 5, AH = 254, BL = 254, BH = 127, CL = 0, CH = 16, DL = 0, DH = 16
+CF = 0 , PF = 0 , ZF = 0 , SF = 1 , OF = 1
