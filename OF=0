@@ -1,0 +1,24 @@
+        include masm32rt.inc
+        include jikken_macro.asm
+
+        .code
+start:
+        mov al, 0
+        mov ah, 1
+        sub ah, al
+        dump_register8
+        dump_flag
+
+        mov bl, 1
+        mov bh, 1
+        add bl, bh
+        dump_register8
+        dump_flag
+
+        exit
+end start
+
+AL = 0, AH = 1, BL = 0, BH = 208, CL = 0, CH = 16, DL = 0, DH = 16
+CF = 0 , PF = 0 , ZF = 0 , SF = 0 , OF = 0
+AL = 0, AH = 1, BL = 2, BH = 1, CL = 0, CH = 16, DL = 0, DH = 16
+CF = 0 , PF = 0 , ZF = 0 , SF = 0 , OF = 0
