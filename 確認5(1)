@@ -1,0 +1,18 @@
+        include masm32rt.inc
+        include jikken_macro.asm
+
+        .code
+start:
+        mov eax, 1000
+        dump_register
+        push eax
+        mov eax, 0
+        dump_register
+        pop ebx
+        dump_register
+        exit
+end start
+
+EAX = 1000, EBX = 2539520, ECX = 4198400, EDX = 4198400, ESI = 4198400, EDI = 4198400, ESP = 1769336, EBP = 1769348
+EAX = 0, EBX = 2539520, ECX = 4198400, EDX = 4198400, ESI = 4198400, EDI = 4198400, ESP = 1769332, EBP = 1769348
+EAX = 0, EBX = 1000, ECX = 4198400, EDX = 4198400, ESI = 4198400, EDI = 4198400, ESP = 1769336, EBP = 1769348
