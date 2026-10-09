@@ -1,0 +1,15 @@
+        include masm32rt.inc
+        include jikken_macro.asm
+
+        .code
+start:
+        mov     al,64
+        sal     al,1
+        dump_register8
+        dump_flag
+
+        exit
+end start
+
+AL = 128, AH = 255, BL = 0, BH = 96, CL = 0, CH = 16, DL = 0, DH = 16
+CF = 0 , PF = 0 , ZF = 0 , SF = 1 , OF = 1
